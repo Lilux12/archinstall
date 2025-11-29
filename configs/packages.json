@@ -1,0 +1,55 @@
+{
+  "desktop": {
+    "name": "Desktop (full installation)",
+    "description": "Complete desktop system with all tools",
+    "packages": {
+      "base": ["base", "base-devel", "linux", "linux-firmware"],
+      "essential": [
+        "networkmanager",
+        "wireless_tools",
+        "wpa_supplicant",
+        "dialog",
+        "sudo",
+        "git",
+        "reflector",
+        "vim",
+        "nano"
+      ],
+      "extra": [
+        "firefox",
+        "file-roller",
+        "pulseaudio",
+        "alsa-utils",
+        "xdg-user-dirs",
+        "ttf-dejavu",
+        "noto-fonts"
+      ]
+    }
+  },
+  "minimal": {
+    "name": "Minimal (minimal system)",
+    "description": "Only essential packages",
+    "packages": {
+      "base": ["base", "linux", "linux-firmware"],
+      "essential": ["networkmanager", "sudo", "nano"],
+      "extra": []
+    }
+  },
+  "server": {
+    "name": "Server (server configuration)",
+    "description": "Server-optimized installation",
+    "packages": {
+      "base": ["base", "linux", "linux-firmware"],
+      "essential": [
+        "networkmanager",
+        "openssh",
+        "sudo",
+        "htop",
+        "tmux",
+        "curl",
+        "wget"
+      ],
+      "extra": ["git", "vim"]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "example_desktop_kde": {
+    "description": "Example desktop profile with KDE Plasma",
+    "settings": {
+      "language": "ru",
+      "disk": "/dev/sda",
+      "partition_scheme": "auto_ext4",
+      "is_uefi": true,
+      "gpu_driver": "nvidia_proprietary",
+      "desktop_environment": "kde",
+      "keyboard_layouts": ["ru", "us"],
+      "keyboard_switch": "alt_shift",
+      "installation_profile": "desktop",
+      "hostname": "archlinux",
+      "network_manager": "networkmanager",
+      "timezone": "Europe/Moscow",
+      "locale": ["ru_RU.UTF-8", "en_US.UTF-8"],
+      "multilib": true,
+      "aur_helper": "yay",
+      "swap_size": 4,
+      "use_reflector": true
+    }
+  },
+  "example_server_minimal": {
+    "description": "Example minimal server profile",
+    "settings": {
+      "language": "en",
+      "disk": "/dev/sda",
+      "partition_scheme": "auto_ext4",
+      "is_uefi": false,
+      "gpu_driver": "generic",
+      "desktop_environment": "none",
+      "keyboard_layouts": ["us"],
+      "keyboard_switch": "alt_shift",
+      "installation_profile": "server",
+      "hostname": "archserver",
+      "network_manager": "systemd_networkd",
+      "timezone": "UTC",
+      "locale": ["en_US.UTF-8"],
+      "multilib": false,
+      "aur_helper": null,
+      "swap_size": 2,
+      "use_reflector": true
+    }
+  },
+  "example_laptop_kde": {
+    "description": "Example laptop profile with hybrid graphics",
+    "settings": {
+      "language": "ru",
+      "disk": "/dev/nvme0n1",
+      "partition_scheme": "auto_btrfs",
+      "is_uefi": true,
+      "gpu_driver": "hybrid",
+      "desktop_environment": "kde",
+      "keyboard_layouts": ["ru", "us"],
+      "keyboard_switch": "alt_shift",
+      "installation_profile": "desktop",
+      "hostname": "laptop",
+      "network_manager": "networkmanager",
+      "timezone": "Europe/Moscow",
+      "locale": ["ru_RU.UTF-8", "en_US.UTF-8"],
+      "multilib": true,
+      "aur_helper": "paru",
+      "swap_size": 8,
+      "use_reflector": true,
+      "bootloader": "systemd-boot"
+    }
+  }
+}
